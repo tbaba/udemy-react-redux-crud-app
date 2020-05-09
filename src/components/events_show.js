@@ -87,5 +87,5 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = ({ deleteEvent, getEvent, putEvent });
 
 export default connect(mapStateToProps, mapDispatchToProps)(
-  reduxForm({ validate, form: 'editEventForm',enableReinitialize: true })(EventsShow),
+  reduxForm({ validate, form: 'editEventForm', enableReinitialize: true })(EventsShow),
 );
